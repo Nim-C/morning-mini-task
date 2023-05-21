@@ -1,0 +1,125 @@
+.login-form {
+  display: grid;
+  grid-template-areas:
+    'greeting'
+    'form-inputs'
+    'buttons';
+  grid-row-gap: 6.8rem;
+  grid-column-gap: 2rem;
+
+  @media (max-width: 480px) {
+    grid-row-gap: 3.8rem;
+  }
+}
+
+.greeting {
+  color: #23445a;
+  font-family: 'Almoni Tzar DL 4.0 AAA';
+  font-size: clamp(3.9rem, 2.8vw, 4.8rem);
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: right;
+  grid-area: greeting;
+
+  @media (max-width: 1024px) {
+    font-size: clamp(3rem, 2.8vw, 3.8rem);
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  grid-area: form-inputs;
+  display: flex;
+  flex-direction: column;
+  gap: 6.8rem;
+}
+
+.login-buttons-container {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.login-button {
+  color: var(--vt-c-white);
+  font-family: 'Almoni Neue AAA';
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  height: 5.6rem;
+  width: 23rem;
+  border-radius: 10rem;
+  background-color: #18c746;
+  border: 0;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.google-login {
+  box-sizing: border-box;
+  height: 5.6rem;
+  width: 17rem;
+
+  border: 0.1rem solid #0084f4;
+  border-radius: 10rem;
+
+  color: #0084f4;
+  background-color: transparent;
+
+  font-family: 'Almoni Neue AAA';
+  font-size: 1.6rem;
+  font-weight: bold;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+input {
+  display: block;
+  width: 100%;
+  color: #23445a;
+  font-family: 'Almoni Neue AAA';
+  font-size: 1.8rem;
+  letter-spacing: 0;
+  line-height: 2.2rem;
+  text-align: right;
+  border-width: 0 0 1px 0;
+  outline: none;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  height: 1.4rem;
+  width: 26rem;
+  color: #23445a;
+  font-family: 'Almoni Neue AAA';
+  font-size: 1.4rem;
+  letter-spacing: 0;
+  line-height: 1.7rem;
+  text-align: right;
+
+  &.forgot-password {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

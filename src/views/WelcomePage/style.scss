@@ -1,0 +1,49 @@
+.welcome-page-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 2rem;
+
+  box-sizing: border-box;
+
+  background-color: var(--vt-c-white-soft);
+}
+
+.greeting,
+.glad-to-see-you,
+.cta-go-to-details {
+  font-family: 'Almoni Tzar DL 4.0 AAA';
+}
+
+.greeting {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.glad-to-see-you {
+  font-size: 2.2rem;
+}
+
+.cta-go-to-details {
+  font-size: 2rem;
+}
+
+.take-me-to-details {
+  text-decoration: none;
+
+  text-decoration: none;
+
+  color: var(--vt-c-white-soft);
+  background-color: var(--french-mauve);
+
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 2.6rem;
+}
